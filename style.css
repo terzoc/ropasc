@@ -1,0 +1,15 @@
+img{
+	height:100px;
+}
+
+.rock{
+	display:none;
+}
+
+.paper{
+	display:none;
+}
+
+.scissors{
+	display:none;
+}
