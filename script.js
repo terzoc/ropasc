@@ -42,19 +42,19 @@ function game(computer, player) {
 }
 
 function rock(){
-	document.getElementById('rock').classList.add('rock');
-	document.getElementById('paper').classList.add('paper');
-	document.getElementById('scissors').classList.add('scissors');
+	document.getElementById('cRock').classList.add('rock');
+	document.getElementById('cPaper').classList.add('paper');
+	document.getElementById('cScissors').classList.add('scissors');
 	var computer = Math.floor(Math.random() * 3);
 	if (computer == 0) {
 		computer = "paper";
-		document.getElementById('paper').classList.remove('paper');
+		document.getElementById('cPaper').classList.remove('paper');
 	} else if (computer == 1) {
 		computer = "scissors";
-		document.getElementById('scissors').classList.remove('scissors');
+		document.getElementById('cScissors').classList.remove('scissors');
 	} else if (computer == 2) {
 		computer = "rock";
-		document.getElementById('rock').classList.remove('rock');
+		document.getElementById('cRock').classList.remove('rock');
 	}
 	console.log(computer);
 	player = "rock";
@@ -62,19 +62,19 @@ function rock(){
 }
 
 function paper(){
-	document.getElementById('rock').classList.add('rock');
-	document.getElementById('paper').classList.add('paper');
-	document.getElementById('scissors').classList.add('scissors');
+	document.getElementById('cRock').classList.add('rock');
+	document.getElementById('cPaper').classList.add('paper');
+	document.getElementById('cScissors').classList.add('scissors');
 	var computer = Math.floor(Math.random() * 3);
 	if (computer == 0) {
 		computer = "paper";
-		document.getElementById('paper').classList.remove('paper');
+		document.getElementById('cPaper').classList.remove('paper');
 	} else if (computer == 1) {
 		computer = "scissors";
-		document.getElementById('scissors').classList.remove('scissors');
+		document.getElementById('cScissors').classList.remove('scissors');
 	} else if (computer == 2) {
 		computer = "rock";
-		document.getElementById('rock').classList.remove('rock');
+		document.getElementById('cRock').classList.remove('rock');
 	}
 	console.log(computer);
 	player = "paper";
@@ -82,19 +82,21 @@ function paper(){
 }
 
 function scissors(){
-	document.getElementById('rock').classList.add('rock');
-	document.getElementById('paper').classList.add('paper');
-	document.getElementById('scissors').classList.add('scissors');
+	// document.getElementById('pRock').classList.add('rock');
+	// document.getElementById('pPaper').classList.add('paper');
+	document.getElementById('cRock').classList.add('rock');
+	document.getElementById('cPaper').classList.add('paper');
+	document.getElementById('cScissors').classList.add('scissors');
 	var computer = Math.floor(Math.random() * 3);
 	if (computer == 0) {
 		computer = "paper";
-		document.getElementById('paper').classList.remove('paper');
+		document.getElementById('cPaper').classList.remove('paper');
 	} else if (computer == 1) {
 		computer = "scissors";
-		document.getElementById('scissors').classList.remove('scissors');
+		document.getElementById('cScissors').classList.remove('scissors');
 	} else if (computer == 2) {
 		computer = "rock";
-		document.getElementById('rock').classList.remove('rock');
+		document.getElementById('cRock').classList.remove('rock');
 	}
 	console.log(computer);
 	player = "scissors";
